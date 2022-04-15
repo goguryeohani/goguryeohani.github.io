@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="static/slick.css"/>
         <link rel="stylesheet" type="text/css" href="static/slick-theme.css"/>
+        <link rel="stylesheet" href="static/page.css">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gugi&family=Noto+Serif+KR:wght@600;700&family=Song+Myung&display=swap" rel="stylesheet">
         <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=yo1h0xxct0"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -12,6 +14,130 @@
 
         <title>고구려한의원</title>
         <style>
+            .section1 {
+                padding-top: 30px;
+                width: 100%;
+                background: #D3C9EF;
+            }
+            .section1_top {
+                text-align: center;
+            }
+
+            .main_title {
+                font-family: 'Gugi', cursive;
+                font-size: 3rem;
+                color: #3C3C5B;
+            }
+
+            .page_title {
+                font-family: 'Black Han Sans', sans-serif;
+                font-size: 2rem;
+                color: #7575BD;
+                text-align: center;
+                padding: 2rem;
+            }
+
+            .sub_title {
+                font-family: 'Song Myung', serif;
+                font-size: 1.2rem;
+                color: #FFFFFF;
+            }
+
+            .section1_main_text {
+                font-family: 'Noto Serif KR', serif;
+                color: #3C3C5B;
+            }
+
+            .section1_main_text_white {
+                color: white;
+            }
+
+            .section1_main_text_point {
+                font-family: 'Noto Serif KR', serif;
+                color: #7575BD;
+                font-size: 3rem;
+                line-height: 70px;
+                margin-bottom: 10px;
+            }
+            
+            .section1_main {
+                display: flex;
+                justify-content: center;
+                height: 400px;
+            }
+
+            .section1_main_1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                line-height: 2.4rem;
+            }
+
+            .apply_button {
+                width: 300px;
+                height: 45px;
+                background-color: #3C3C5B;
+                color: white;
+            }
+
+            .section1_main_2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .section2 {
+                padding-top: 30px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .section2 > img{
+                width: 800px;
+            }
+
+            .section4 {
+                background-image: url('/static/image/go_section_4.svg');
+                height: 2200px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: inherit;
+                position: relative;
+            }
+
+            .section4_qna{
+                box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                width: 1000px;
+                margin: 15px auto;
+                
+            }
+
+            .section4_question {
+                background: #B7B7E5;
+                line-height: 60px;
+                height: 60px;
+                font-weight: bold;
+                font-size: 18px;
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            .section4_answer {
+                height: 80px;
+                border-radius: 0px 0px 10px 10px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 80px;
+            }
+
+            .section4_info {
+                background: #D8D8FA;
+                border-radius: 10px;
+                padding: 30px;
+                text-align: center;
+                width: 945px;
+                margin: 0 auto;
+            }
+
             .slider {
                 width: 30%;
                 margin: 100px auto;
@@ -48,7 +174,15 @@
                 height: 30px;
                 line-height: 33px;
                 color:white;
-
+            }
+            #mapnoti{
+                margin-top: -350px;
+                margin-left:35%;
+                z-index: 99999;
+                background: #D8D8FA;
+                width:200px;
+                height:150px;
+                border-radius: 10px;
             }
             .iw_inner {
                 padding: 5px;
@@ -66,10 +200,10 @@
                                                     center: haniposition, //지도의 초기 중심 좌표
                                                     zoom: 17, //지도의 초기 줌 레벨
                                                     minZoom: 7, //지도의 최소 줌 레벨
-                                                    zoomControl: true, //줌 컨트롤의 표시 여부
-                                                    zoomControlOptions: { //줌 컨트롤의 옵션
-                                                        position: naver.maps.Position.TOP_RIGHT
-                                                    }
+                                                    // zoomControl: true, //줌 컨트롤의 표시 여부
+                                                    // zoomControlOptions: { //줌 컨트롤의 옵션
+                                                    //     position: naver.maps.Position.TOP_RIGHT
+                                                    // }
                                                 });
                 let marker = new naver.maps.Marker({
                                                     map: map,
@@ -86,6 +220,150 @@
         </script>
     </head>
     <body>
+        <article class="section1">
+            <section class="section1_top">
+                <p class="main_title">고구려한의원</p>
+                <p class="sub_title">Goguryeo Oriental Clinix</p>
+            </section>
+            <section class="section1_main">
+                <div class="section1_main_1">
+                    <div>
+                        <p class="section1_main_text">고구려한의원 다이어트환</p>
+                        <p class="section1_main_text_point">감비환</p>
+                        <p class="section1_main_text">
+                            날씬함도 건강도 감비환으로!!
+                            <br> 고구려한의원의 <span class="section1_main_text_white">'감비환'</span>은
+                            <br> 순하고 안전한 천연 한약재로 조게되어 <span class="section1_main_text_white"> 장기간 복용해도 무리 NO! </span> 
+                            <br> 뛰어난 식욕억제와 기초대사량 증가, 내장지방 감소로 쉽고 빠른 다이어트
+                        </p>
+                    </div>
+                    <div style="margin-top:25px;">
+                        <input class="apply_button" type="button" value="비대면 신청하기">                    
+                    </div>
+                </div>
+    
+                <div class="section1_main_2">
+                    <img src="/static/image/go_medicine_box.svg"/>
+                </div>
+    
+            </section>
+        </article>
+    
+        <article class="section2">
+            <p class="page_title">상세정보</p>
+            <img style="width:800px;" src="/static/image/go_section2_image.svg"/>
+        </article>
+    
+        <article class="section3">
+            <img style="width:100%;" src="/static/image/go_section_3.svg">
+        </article>
+    
+        <article class="section4">
+            <p class="page_title">리얼후기</p>
+            <div style="text-align: center;">
+                <img style="width:600px;" src="/static/image/go_section4_review.svg">
+            </div>
+    
+            <div>
+                <p class="page_title">궁금증과 가이드</p>  
+                <!-- 질문 첫번째 -->
+                <div class="section4_qna">
+                    <div class="section4_question">
+                        <img src=""/> 
+                        <span>체질에 관계없이 누구나 먹을 수 있나요?</span>
+                    </div>
+                    <div class="section4_answer">
+                        <img src=""/> 
+                        <span>중증 질환을 앓고 있거나 임산부 등 다이어트가 어려운 경우를 제외하면, 체질과 관계없이 복용이 가능합니다.</span>
+                    </div>
+                </div>
+                
+                <!-- 질문 두번째 -->
+                <div class="section4_qna">
+                    <div class="section4_question">
+                        <img src=""/> 
+                        <span>체질에 관계없이 누구나 먹을 수 있나요?</span>
+                    </div>
+                    <div class="section4_answer">
+                        <img src=""/> 
+                        <span>중증 질환을 앓고 있거나 임산부 등 다이어트가 어려운 경우를 제외하면, 체질과 관계없이 복용이 가능합니다.</span>
+                    </div>
+                </div>
+    
+                <!-- 질문 세번째 -->
+                <div class="section4_qna">
+                    <div class="section4_question">
+                        <img src=""/> 
+                        <span>체질에 관계없이 누구나 먹을 수 있나요?</span>
+                    </div>
+                    <div class="section4_answer">
+                        <img src=""/> 
+                        <span>중증 질환을 앓고 있거나 임산부 등 다이어트가 어려운 경우를 제외하면, 체질과 관계없이 복용이 가능합니다.</span>
+                    </div>
+                </div>
+    
+                <!-- 질문 네번째 -->
+                <div class="section4_qna">
+                    <div class="section4_question">
+                        <img src=""/> 
+                        <span>체질에 관계없이 누구나 먹을 수 있나요?</span>
+                    </div>
+                    <div class="section4_answer">
+                        <img src=""/> 
+                        <span>중증 질환을 앓고 있거나 임산부 등 다이어트가 어려운 경우를 제외하면, 체질과 관계없이 복용이 가능합니다.</span>
+                    </div>
+                </div>
+    
+                <!-- 질문 다섯번째 -->
+                <div class="section4_qna">
+                    <div class="section4_question">
+                        <img src=""/> 
+                        <span>체질에 관계없이 누구나 먹을 수 있나요?</span>
+                    </div>
+                    <div class="section4_answer">
+                        <img src=""/> 
+                        <span>중증 질환을 앓고 있거나 임산부 등 다이어트가 어려운 경우를 제외하면, 체질과 관계없이 복용이 가능합니다.</span>
+                    </div>
+                </div>
+    
+                <div class="section4_info">
+                    <p>계좌안내</p>
+                    <p>하나은행 307-910466-87707</p>
+                    <p>정유창(고구려한의원)</p>
+                </div>
+    
+                <div class="section4_info">
+                    <p>문의전화</p>
+                    <p>051-6270-2727</p>
+                </div>
+    
+            </div>
+    
+            <div style="display:flex; padding-left: 200px; padding-top: 55px">
+                <div>
+                    <img src="/static/image/go_section_4_person.svg"/>
+                </div>
+                <div>
+                    <div style="border-bottom: 1px solid black; width: 400px; text-align: right;">
+                        <span>고구려한의원</span>
+                        <span style="border-bottom: 3px solid black; display: inline-block;">
+                            대표원장 정유창
+                        </span>
+                    </div>
+                    <p>
+                        · 광주과학고등학교 졸업 <br>
+                        · 원광대학교 한의과대학 졸업 <br>
+                        · (전) 강동경희대한방병원 일반 수련의 <br>
+                        · (전) 위너면역질환연구소 연구위원 <br>
+                        · (전) 위너한의원 수석원장 <br>
+                        · 대한한의학회 정회원 <br>
+                    </p>
+                </div>
+            </div>
+    
+        </article>
+
+
         <div class="imgslider slider">
             <div><img src="/static/img/01.jpeg" /></div>
             <div><img src="/static/img/02.jpeg" /></div>
@@ -97,6 +375,13 @@
         <div class="maparea">
             <div id="map"></div>
             <div id="mapdesc">부산 남구 수영로 323번길 11 마로니에타운 403호</div>
+            <div id="mapnoti">
+                <div>진료시간안내</div>
+                <div>월·목·금 : am 9:30 ~ pm 7:00</div>
+                <div>화요일   : am 9:30 ~ pm 8:00</div>
+                <div>토요일   : am 9:30 ~ pm 2:00</div>
+                <div>수요일과 일요일은 휴진합니다</div>
+            </div>
         </div>
     </body>
 </html>
