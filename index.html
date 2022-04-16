@@ -298,6 +298,30 @@
             .iw_inner {
                 padding: 5px;
             }
+
+            .naver_map_1 {
+                font-family: 'Gugi', cursive;
+                font-size: 20px;
+                color: #3C3C5B;
+            }
+
+            .naver_map_2 {
+                font-weight: 700;
+                color: #520000;
+                font-size: 15px;
+            }
+
+            .naver_map_3_1 {
+                font-size: 15px;
+                border-bottom: 1px solid white;
+                padding-bottom: 7px;
+                padding-top: 6px;
+            }
+
+            .naver_map_3_2 {
+                font-weight: 700;
+            }
+
         </style>
         <script>
             $(document).ready(function(){
@@ -398,11 +422,11 @@
                 <div class="section4_qna">
                     <div class="section4_question">
                         <img src="/static/image/go_section4_q.svg">
-                        <span>체질에 관계없이 누구나 먹을 수 있나요?</span>
+                        <span>체중감량에 얼마나 효과가 있나요?</span>
                     </div>
                     <div class="section4_answer">
                         <img src="/static/image/go_section4_a.svg">
-                        <span>중증 질환을 앓고 있거나 임산부 등 다이어트가 어려운 경우를 제외하면, 체질과 관계없이 복용이 가능합니다.</span>
+                        <span>월평균 2~4kg 정도 감량을 기대할 수 있으며, 식이조절에 따라 더 빠른 감량이 가능합니다.</span>
                     </div>
                 </div>
     
@@ -410,11 +434,11 @@
                 <div class="section4_qna">
                     <div class="section4_question">
                         <img src="/static/image/go_section4_q.svg">
-                        <span>체질에 관계없이 누구나 먹을 수 있나요?</span>
+                        <span>장기간 복용해도 되나요? 부작용은 없나요?</span>
                     </div>
                     <div class="section4_answer">
                         <img src="/static/image/go_section4_a.svg">
-                        <span>중증 질환을 앓고 있거나 임산부 등 다이어트가 어려운 경우를 제외하면, 체질과 관계없이 복용이 가능합니다.</span>
+                        <span style="line-height: 40px;">건강에 특별한 문제가 없는 이상 장기간 복용 가능하며, 대사 촉진 과정에서 사람에 따라 불면, 두근거림, 변비, 입 마름 등이 나타날 수 있으나 자연스러운 반응이며, 대개 1~2주 이내에 완화됩니다</span>
                     </div>
                 </div>
     
@@ -422,11 +446,11 @@
                 <div class="section4_qna">
                     <div class="section4_question">
                         <img src="/static/image/go_section4_q.svg">
-                        <span>체질에 관계없이 누구나 먹을 수 있나요?</span>
+                        <span>감비환은 단계별로 나누어져 있나요?</span>
                     </div>
                     <div class="section4_answer">
                         <img src="/static/image/go_section4_a.svg">
-                        <span>중증 질환을 앓고 있거나 임산부 등 다이어트가 어려운 경우를 제외하면, 체질과 관계없이 복용이 가능합니다.</span>
+                        <span>따로 단계가 있지 않고 복용량과 횟수로 강도를 조절할 수 있습니다.</span>
                     </div>
                 </div>
     
@@ -434,11 +458,11 @@
                 <div class="section4_qna">
                     <div class="section4_question">
                         <img src="/static/image/go_section4_q.svg">
-                        <span>체질에 관계없이 누구나 먹을 수 있나요?</span>
+                        <span>복용을 중단하며 요요현상이 오나요?</span>
                     </div>
                     <div class="section4_answer">
                         <img src="/static/image/go_section4_a.svg">
-                        <span>중증 질환을 앓고 있거나 임산부 등 다이어트가 어려운 경우를 제외하면, 체질과 관계없이 복용이 가능합니다.</span>
+                        <span>목표 체중으로 감량 후 하루 한 포 복용으로 요요현상을 방지할 수 있습니다.</span>
                     </div>
                 </div>
     
@@ -496,11 +520,16 @@
                 <div id="map"></div>
                 <div id="mapdesc">부산 남구 수영로 323번길 11 마로니에타운 403호</div>
                 <div id="mapnoti">
-                    <div>진료시간안내</div>
-                    <div>월·목·금 : am 9:30 ~ pm 7:00</div>
-                    <div>화요일   : am 9:30 ~ pm 8:00</div>
-                    <div>토요일   : am 9:30 ~ pm 2:00</div>
-                    <div>수요일과 일요일은 휴진합니다</div>
+                    <p class="naver_map_1">고구려한의원</p>
+                    <p class="naver_map_2">진료시간안내</p>
+                    <div class="naver_map_3_1">월·목·금 : <span class="naver_map_3_2">am 9:30 ~ pm 7:00</span></div>
+                    <div class="naver_map_3_1">화요일   : <span class="naver_map_3">am 9:30 ~ pm 8:00</span></div>
+                    <div class="naver_map_3_1">토요일   : <span class="naver_map_3">am 9:30 ~ pm 2:00</span></div>
+                    <div class="naver_map_4" >
+                        <span class="naver_map_3_2">수요일</span>과 
+                        <span class="naver_map_3_2">일요일</span>은 
+                        <span class="naver_map_3_2">휴진</span>합니다
+                    </div>
                 </div>
             </div>
         </article>
