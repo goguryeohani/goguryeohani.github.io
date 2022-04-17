@@ -274,6 +274,7 @@
             .section6 {
                 background: #EDEDFF;
                 width: 100%;
+                height: 700px;
             }
 
             .maparea{
@@ -303,6 +304,8 @@
                 width:200px;
                 height:150px;
                 border-radius: 10px;
+                padding: 20px 20px 30px 20px;
+                text-align: center;
             }
             .iw_inner {
                 padding: 5px;
@@ -318,6 +321,7 @@
                 font-weight: 700;
                 color: #520000;
                 font-size: 15px;
+                margin: 8px 0px 5px 0px;
             }
 
             .naver_map_3_1 {
@@ -325,10 +329,45 @@
                 border-bottom: 1px solid white;
                 padding-bottom: 7px;
                 padding-top: 6px;
+                color: #3C3C5B;
             }
 
             .naver_map_3_2 {
                 font-weight: 700;
+                color: #3C3C5B;
+            }
+
+            .naver_map_4 {
+                margin-top: 15px;
+            }
+
+            .map_under_info {
+                background: rgba(255, 255, 255, 0.5); 
+                box-shadow: 0px 0px 5px 0px #00000040; 
+                margin: 180px auto 0px auto; 
+                width:50%;
+                padding: 20px;
+            }
+
+            .footer{
+                width: 100%;
+                background-color: #3C3C5B;
+                text-align: center;
+                padding: 35px 0px 40px 0px;
+                line-height: 25px;
+            }
+
+            .footer_1 {
+                font-family: 'Gugi', cursive;
+                font-size: 28px;
+                color: white;
+            }
+
+            .footer_2 {
+                color: white;
+                font-size: 15px;
+                margin-top: 20px;
+                font-weight: 400;
             }
 
             /* Mobile Device */
@@ -559,6 +598,8 @@
         </article>
 
         <article class="section6">
+            <div class="half_circle"></div>
+            <p class="page_title">오시는 길</p>
             <div class="maparea">
                 <div id="map"></div>
                 <div id="mapdesc">부산 남구 수영로 323번길 11 마로니에타운 403호</div>
@@ -566,8 +607,8 @@
                     <p class="naver_map_1">고구려한의원</p>
                     <p class="naver_map_2">진료시간안내</p>
                     <div class="naver_map_3_1">월·목·금 : <span class="naver_map_3_2">am 9:30 ~ pm 7:00</span></div>
-                    <div class="naver_map_3_1">화요일   : <span class="naver_map_3">am 9:30 ~ pm 8:00</span></div>
-                    <div class="naver_map_3_1">토요일   : <span class="naver_map_3">am 9:30 ~ pm 2:00</span></div>
+                    <div class="naver_map_3_1">화요일   : <span class="naver_map_3_2">am 9:30 ~ pm 8:00</span></div>
+                    <div class="naver_map_3_1">토요일   : <span class="naver_map_3_2">am 9:30 ~ pm 2:00</span></div>
                     <div class="naver_map_4" >
                         <span class="naver_map_3_2">수요일</span>과 
                         <span class="naver_map_3_2">일요일</span>은 
@@ -575,9 +616,17 @@
                     </div>
                 </div>
             </div>
-                <!-- <div style="width: 50%; height: 400px;">
+            <div class="map_under_info">
                     <p>주차</p>
-                </div> -->
+                    <p>예약</p>
+                    <p>국민지원금 사용</p>
+            </div>
         </article>
+        <footer class="footer"> 
+            <p class="footer_1">고구려한의원</p>
+            <p class="footer_2">부산 남구 수영로 323번길 11 마로니에타운 403호 <br>
+                051-62702727
+            </p>
+        </footer>
     </body>
 </html>
