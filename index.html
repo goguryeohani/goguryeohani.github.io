@@ -121,7 +121,7 @@
             }
 
             .section2 > img{
-                width: 800px;
+                width: 750px;
             }
 
             .section4 {
@@ -159,7 +159,8 @@
                 border-radius: 0px 0px 10px 10px;
                 font-weight: 400;
                 font-size: 18px;
-                line-height: 80px;
+                /* line-height: 80px; */
+                align-items: center;
             }
 
             .section4_answer > img {
@@ -333,16 +334,80 @@
 
             /* Mobile Device */
             @media all and (max-width:768px) {
+                .section1_main {
+                    margin:70px 0px 0px 0px;
+                    height:unset;
+                    flex-direction: column-reverse;
+                }
+                .section1_main_1 {
+                    justify-content: center;
+                }
+                .section1_main_2 {
+                    width:unset;
+                    justify-content: center;
+                }
+                .section1_main_2 > img {
+                    width: 60%;
+                }
+                .section1_main_text {
+                    text-align:center;
+                }
+                .section1_main_text_point {
+                    text-align:center;
+                }
+                .apply_area {
+                    text-align: center;
+                }
+                .apply_area > input {
+                    width:calc(80% - 2.1px);
+                }
+                .sns_link {
+                    text-align: center;
+                    width:100%;
+                }
+                .sns_link > img {
+                    width: calc(40% - 2.1px)
+                }
+
+                .section2 > img {
+                    width: 90%;
+                }
+
+                .section4_1 > img {
+                    width: 90% !important;
+                }
+
                 .section4_qna {
                     width: 90%;
                 }
                 .section4_answer {
-                    line-height: inherit;
-                    display: flex;
-                    align-items: center;
+                    padding: 10px 0px;
                 }
                 .section4_info {
                     width: 90%;
+                }
+
+                .section4_3 {
+                    flex-direction: column;
+                    margin-right: unset;
+                }
+                .ceo_image{
+                    text-align:center;
+                    margin-right: unset;
+                }
+                .ceo_image > img {
+                    width:50%;
+                }
+                .ceo_introduce {
+                    text-align: center;
+                    margin-top : 10px;
+                }
+                .ceo_introduce > div {
+                    width:unset !important;
+                    text-align: unset !important;
+                }
+                .slider {
+                    width: 80%;
                 }
             }
 
@@ -358,6 +423,9 @@
                 }
                 .section4_info {
                     width: 90%;
+                }
+                .slider {
+                    width: 60%;
                 }
             }
 
@@ -415,7 +483,7 @@
                             <br> <img src="/static/image/go_section1_check.svg"/> 뛰어난 식욕억제와 기초대사량 증가, 내장지방 감소로 쉽고 빠른 다이어트
                         </p>
                     </div>
-                    <div style="margin-top:25px;">
+                    <div class="apply_area" style="margin-top:25px;">
                         <input class="apply_button" type="button" value="비대면 신청하기">  
                         <div class="sns_link">
                             <img src="/static/image/go_section1_kakao.svg">  
@@ -434,7 +502,7 @@
         <article class="section2">
             <div class="half_circle"></div>
             <p class="page_title">상세정보</p>
-            <img style="width:750px;" src="/static/image/go_section2_image.png"/>
+            <img src="/static/image/go_section2_image.png"/>
         </article>
     
         <article class="section3">
@@ -481,7 +549,7 @@
                     </div>
                     <div class="section4_answer">
                         <img src="/static/image/go_section4_a.svg">
-                        <span style="line-height: 40px;">건강에 특별한 문제가 없는 이상 장기간 복용 가능하며, 대사 촉진 과정에서 사람에 따라 불면, 두근거림, 변비, 입 마름 등이 나타날 수 있으나 자연스러운 반응이며, 대개 1~2주 이내에 완화됩니다</span>
+                        <span>건강에 특별한 문제가 없는 이상 장기간 복용 가능하며, 대사 촉진 과정에서 사람에 따라 불면, 두근거림, 변비, 입 마름 등이 나타날 수 있으나 자연스러운 반응이며, 대개 1~2주 이내에 완화됩니다</span>
                     </div>
                 </div>
     
