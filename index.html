@@ -16,6 +16,13 @@
 
         <script>
             $(document).ready(function(){
+                $(".section4_answer").hide();
+
+                $(".section4_question").click(function(){
+                    $(this).find(".section4_qna_arrow").toggleClass("section_qna_arrow_turn");
+                    $(this).next().toggle();
+                });
+
                 $('.imgslider').slick({
                     dots: true,
                     infinite: true,
@@ -59,8 +66,18 @@
                         <p class="section1_main_text">
                             날씬함도 건강도 감비환으로!!
                             <br> 고구려한의원의 <span class="section1_main_text_white">'감비환'</span>은
-                            <br> <img src="/static/image/go_section1_check.svg"/> 순하고 안전한 천연 한약재로 조제되어 <span class="section1_main_text_white"> 장기간 복용해도 무리 NO! </span> 
-                            <br> <img src="/static/image/go_section1_check.svg"/> 뛰어난 식욕억제와 기초대사량 증가, 내장지방 감소로 쉽고 빠른 다이어트
+                            <div class="section1_main_text_line">
+                                <div>
+                                    <img src="/static/image/go_section1_check.svg"/> 순하고 안전한 천연 한약재로 조제되어
+                                </div>
+                                <div class="section1_main_text_white"> 장기간 복용해도 무리 NO! </div> 
+                            </div>
+                            <div class="section1_main_text_line">
+                                <div>
+                                    <img src="/static/image/go_section1_check.svg"/> 뛰어난 식욕억제와 기초대사량 증가,
+                                </div>
+                                <div>내장지방 감소로 쉽고 빠른 다이어트</div>
+                            </div>
                         </p>
                     </div>
                     <div class="apply_area" style="margin-top:25px;">
@@ -115,7 +132,7 @@
         </article>
     
         <article class="section3">
-            <img style="width:100%;" src="/static/image/go_section_3_check.png">
+            <img src="/static/image/go_section_3_check_resize.png">
         </article>
     
         <article class="section4">
@@ -131,6 +148,8 @@
                     <div class="section4_question">
                         <img src="/static/image/go_section4_q.svg">
                         <span>체질에 관계없이 누구나 먹을 수 있나요?</span>
+                        <span class="section4_qna_spacer"></span>
+                        <span class="section4_qna_arrow">▲</span>
                     </div>
                     <div class="section4_answer">
                         <img src="/static/image/go_section4_a.svg">
@@ -143,6 +162,8 @@
                     <div class="section4_question">
                         <img src="/static/image/go_section4_q.svg">
                         <span>체중감량에 얼마나 효과가 있나요?</span>
+                        <span class="section4_qna_spacer"></span>
+                        <span class="section4_qna_arrow">▲</span>
                     </div>
                     <div class="section4_answer">
                         <img src="/static/image/go_section4_a.svg">
@@ -155,6 +176,8 @@
                     <div class="section4_question">
                         <img src="/static/image/go_section4_q.svg">
                         <span>장기간 복용해도 되나요? 부작용은 없나요?</span>
+                        <span class="section4_qna_spacer"></span>
+                        <span class="section4_qna_arrow">▲</span>
                     </div>
                     <div class="section4_answer">
                         <img src="/static/image/go_section4_a.svg">
@@ -167,6 +190,8 @@
                     <div class="section4_question">
                         <img src="/static/image/go_section4_q.svg">
                         <span>감비환은 단계별로 나누어져 있나요?</span>
+                        <span class="section4_qna_spacer"></span>
+                        <span class="section4_qna_arrow">▲</span>
                     </div>
                     <div class="section4_answer">
                         <img src="/static/image/go_section4_a.svg">
@@ -179,6 +204,8 @@
                     <div class="section4_question">
                         <img src="/static/image/go_section4_q.svg">
                         <span>복용을 중단하면 요요현상이 오나요?</span>
+                        <span class="section4_qna_spacer"></span>
+                        <span class="section4_qna_arrow">▲</span>
                     </div>
                     <div class="section4_answer">
                         <img src="/static/image/go_section4_a.svg">
@@ -227,11 +254,12 @@
             <div class="half_circle"></div>
             <p class="page_title">병원 둘러보기</p>
             <div class="imgslider slider">
-                <div><img src="/static/slider/01.jpeg" /></div>
-                <div><img src="/static/slider/02.jpeg" /></div>
-                <div><img src="/static/slider/03.jpeg" /></div>
-                <div><img src="/static/slider/04.jpeg" /></div>
-                <div><img src="/static/slider/05.jpeg" /></div>
+                <div><img src="/static/slider/1.jpeg" /></div>
+                <div><img src="/static/slider/2.jpeg" /></div>
+                <div><img src="/static/slider/3.jpeg" /></div>
+                <div><img src="/static/slider/4.jpeg" /></div>
+                <div><img src="/static/slider/5.jpeg" /></div>
+                <div><img src="/static/slider/6.jpeg" /></div>
             </div>
         </article>
 
