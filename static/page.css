@@ -25,7 +25,7 @@
     background: white;
     position: fixed;
     right: 6%;
-    top: 11%;
+    top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -40,7 +40,7 @@
     background: #7575BD;
     position: fixed;
     right: 6%;
-    top: 75%;
+    top: 596px;
     border-radius: 0px 0px 10px 10px;
     z-index:100000;
     color: white;
