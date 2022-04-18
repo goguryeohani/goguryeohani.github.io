@@ -47,6 +47,10 @@
                     content: '<div class="iw_inner">고구려한의원</div>'
                 });
                 infowindow.open(map, marker);
+
+                  $('.go_to_top').click( function() {
+                        $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+                  } );
             });
 
 
@@ -121,6 +125,7 @@
                 </div>
             </div>
             <div class="go_to_top">
+                <img src="/static/image/go_top_arrow.svg">
                 <p>Top</p>
             </div>
         </article>

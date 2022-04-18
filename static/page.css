@@ -43,6 +43,11 @@
     top: 75%;
     border-radius: 0px 0px 10px 10px;
     z-index:100000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .main_title {
@@ -550,6 +555,14 @@
 
     .map_under_info {
         margin: 0;
+    }
+
+    .sns_link_bar {
+        display: none;
+    }
+
+    .go_to_top {
+        display: none;
     }
 
 }
