@@ -122,11 +122,12 @@
 
 .sns_link {
     margin-top: 10px;
-    width: 300px;
+    display:flex;
+    /* width: 300px; */
 }
 
 .sns_link > a > img {
-    width: calc(50% - 2.1px)
+    width: 150px;
 }
 
 .section1_main_2 {
@@ -480,7 +481,8 @@
 
     .sns_link {
         text-align: center;
-        margin: 17px auto
+        display:block;
+        margin: 17px auto;
     }
 
     .sns_link>img {
