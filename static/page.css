@@ -378,7 +378,7 @@
 }
 
 .naver_map_3_1 {
-    font-size: 15px;
+    font-size: 14px;
     border-bottom: 1px solid white;
     padding-bottom: 7px;
     padding-top: 6px;
@@ -392,6 +392,7 @@
 
 .naver_map_4 {
     margin-top: 15px;
+    font-size:14px;
 }
 
 .map_under_info {
